@@ -1,0 +1,338 @@
+@charset "utf-8";
+/* CSS Document */
+.super-basic-container{
+	background-color: #221144;
+	height: 800px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.super-basic-container h3{
+	background-color: #111122;
+	height: 20px;
+	overflow: hidden;
+	width: 700px;
+	color: #E4B7B8;	
+	text-align: center;
+}
+
+.super-basic-container h3 span{
+	background-color: #000000;
+	width: 100%;
+	float: left;
+}
+
+.super-basic-container .super-basic-player{
+	background-color: #E7B5F7;	
+	overflow: hidden;
+	height: 400px;
+	width: 700px;
+	padding: 0;
+}
+
+.super-basic-container .super-basic-player .super-basic-video{
+	background-color: #000222;
+	height: 100%;
+	width: 100%;	
+}
+
+.super-basic-container .super-basic-player .super-basic-video .super-basic-v-tag{
+	width: 95%;
+	position: relative;
+	height: auto;
+	top: 10px;	
+}
+
+.super-basic-container .super-basic-player .super-basic-controls{
+	background-color: rgba(20,20,19,1);
+	position: relative;
+	bottom: 50px;
+	display: inline-block;
+	width: 98%;
+	height: 32px;
+	border-radius: 5px;
+	left: 1%;
+	padding: 0.2rem;
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list{
+	list-style: none;
+	background-color: rgba(0,0,0,0);
+	width: 98%;
+	height: 95%;
+	position: relative;
+	bottom: 0px;
+	margin: 0;
+	padding: 0;
+	left: 5px;
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-play{
+	background-color: rgba(0,0,0,0);
+	color: #E3BEFC;
+	width: 32px;
+	height: 90%;
+	margin: 0;
+	padding: 0;
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-play .play-pause{
+	text-decoration: none;
+	background: url(../imgs/SB-vid-icons.png) no-repeat 0px 0px rgba(0,0,0,0);
+	color: #ffffff;
+	float: left;
+	padding: 5;
+	width: 100%;
+	margin: 0;
+	height: 100%;
+	border: none;
+	cursor: pointer;
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-play .play-pause:focus{
+	outline: 0;
+}
+/*.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-current, .super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-current .super-basic-duration{
+	background-color: #5D5566;
+	width: 45px;
+	height: 100%;	
+}*/
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-current,.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-duration{
+	background-color: rgba(0,0,0,0);
+	width: 45px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-current .current-time{
+	background-color: rgba(0,0,0,0);
+	width: 100%;
+	height: 100%;
+	color: rgba(210,183,255,1.00);
+	line-height: 2.5;
+	font-size: 0.9rem;
+	text-align: center;	
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-duration .duration{
+	background-color: rgba(0,0,0,0);
+	width: 100%;
+	height: 100%;
+	color: rgba(210,183,255,1.00);
+	line-height: 2.5;	
+	font-size: 0.9rem;
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-progress{
+	background-color: rgba(0,0,0,0);
+	width: 340px;
+	height: 100%;
+	text-indent: -999px !important;
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .progress-bar{  
+	background-color: rgba(0,0,0,0);
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .progress-bar .progress-slider{
+	background-color: #000000;/*#*/
+	float: left;
+	height: 5px;
+	width: 90%;
+	position: relative;
+	top: 1rem;
+	left: 0.9rem;
+	border-radius: 5px;
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .progress-bar .progress-slider .load-progress{
+	background-color: #673c95;
+	text-indent: -999px !important;
+	float: left;
+	height: 100%;
+	width: 0;
+	position: relative;
+	z-index: 1;	
+	border-radius: 5px;
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .progress-bar .progress-slider > .ui-slider-handle{
+	background-color: #000000;
+	margin-left: -0.5em;
+	margin-right: 0;
+	height: 100%;
+	width: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	cursor: pointer;	
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .progress-bar .progress-slider >.ui-slider-range-min{
+	background-color: #e8792c;
+	border-radius: 5px;	
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .progress-bar .progress-slider > .ui-slider-handle.ui-state-focus{
+	outline: 0;
+	border-radius: 5px;
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-volume{
+	background-color: rgba(0,0,0,0);
+	width: 140px;
+	height: 100%;
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-volume .mute-unmute{
+	background: url(../imgs/SB-volume-icons.png) no-repeat 0 -96px;
+	height: 100%;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	width: 32px;
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-volume .mute-unmute:focus{
+	outline: 0;	
+}
+
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-volume .volume-bar {
+	background-color: #673c95;
+	height: 5px;
+	width: 57%;
+	position: relative;
+	text-indent: -999px !important;
+	top: 1rem;
+	left: 0.9rem;
+	border-radius: 5px;
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-volume .volume-bar > .ui-slider-range-min{
+	background-color: #e8792c;
+	border-radius: 5px;	
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-volume .volume-bar > .ui-slider-handle{
+	background-color: #000000;
+	margin-left: -0.5em;
+	margin-right: 0;
+	height: 100%;
+	width: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	cursor: pointer;		
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-volume .volume-bar > .ui-slider-handle.ui-state-focus{
+	outline: 0;
+	border-radius: 5px;	
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-full{
+	background-color: rgba(0,0,0,0);
+	height: 100%;
+	width: 40px;	
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-full .fullScreen{
+	background: url(../imgs/SB-vid-icons.png) no-repeat 0 -64px rgba(0,0,0,0);
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 40px;
+	border: 0;
+	cursor: pointer;	
+}
+
+.super-basic-container .super-basic-player .super-basic-controls .super-basic-list .super-basic-full .fullScreen:focus{
+	outline: 0; 	
+}
+
+.super-basic-container .super-basic-player .super-basic-big-play{
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	top: 30%;
+	left: 42%;
+	z-index: 3;
+	float: left;
+	width: 15%;
+	height: 75px;
+	display: block;	
+}
+
+ .super-basic-container .super-basic-player .super-basic-big-play .super-basic-big-play-btn{
+	background-color: rgba(0,0,0,0);
+	height: 100%;
+	width: 50%;
+}
+
+.super-basic-container .super-basic-player .super-basic-big-play .super-basic-big-play-btn .big-play-btn{
+	background-color: #000000;
+	border: 0;
+	width: 64px;
+	height: 64px;
+	position: relative;
+	cursor: pointer;
+	top: 5%;	
+ }
+
+.super-basic-container .super-basic-player .super-basic-big-play .super-basic-replay{
+	background-color: #000000;
+	border: 0;
+	width: 64px;
+	height: 64px;
+	position: relative;
+	cursor: pointer;
+	top: 5%;
+}
+
+.clearfix::before, .clearfix::after {
+  content: ' ';
+  display: table;
+  clear:both; 
+}
+
+.float-left{
+	float: left;	
+}
+.float-right{
+	float: right;	
+}
+
+.float-center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.float-inline-center{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto; 	
+}
+
+.ui-slider-horizontal{
+	background-color: rgba(0,0,0,0);
+	border: 0;
+}
+
+
+.SB-hide-text{
+	text-indent: -9999px !important;
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
